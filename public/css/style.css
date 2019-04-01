@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+body { 
+  padding-top: 170px; 
+  
+}
+
+
+div#mainNav {
+  /* width: 100vw; */
+  /* margin-right: 3%;
+  margin-left: 3%; */
+  background-color: white;
+  padding-right: 2%;
+  padding-left: 2%;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+div#topLogin {
+  padding-top: 25px;
+  padding-bottom: 10px;
+  background: black;
+  color:white;
+}
+
+p.tagLine1 {
+  font-size: 22px;
+  text-align: center;
+}
+
+
+div#loginDiv {
+  width: 100vw;
+  background-color: rgb(27, 27, 27);
+  color: white;
+  padding: 30px;
+  /* position: fixed;
+  right: 0;
+  bottom: 0; */
+}
+
+p.mainFooter {
+  text-align: center;
+  color: white;
+
+  /* position: fixed;
+  right: 50%;
+  bottom: 0; */
+  /* font-size: 14px;
+  margin-right: 3%;
+  margin-left: 3%; */
+}
+
+
