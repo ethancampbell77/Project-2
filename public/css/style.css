@@ -43,16 +43,55 @@ div#loginDiv {
   bottom: 0; */
 }
 
-p.mainFooter {
+div.aboutUsDiv {
+  color: rgb(104, 11, 104);
+  padding-top: 40px;
+  padding-bottom: 30px;
+  text-align: left;
+}
+
+p.aboutText {
+  color: black;
+}
+
+div.howToDiv {
+  background-color: white;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  text-align: center;
+  color:black;
+}
+
+h1.howToHeader {
+  color: rgb(104, 11, 104);
+  font-size: 60px;
+}
+
+div.howToText {
+  padding: 2%;
+}
+
+
+div.mainFooter {
+  padding-top: 20px;
+  background-color: black;
   text-align: center;
   color: white;
-
-  /* position: fixed;
-  right: 50%;
-  bottom: 0; */
-  /* font-size: 14px;
-  margin-right: 3%;
-  margin-left: 3%; */
+  padding: 3%;
 }
+/* Members Page Headlines */
+
+h5.titleText {
+  font-size: 40px;
+}
+
+p.subText {
+  font-size: 30px;
+}
+
+p.titleStyle {
+  text-decoration: underline;
+}
+
 
 

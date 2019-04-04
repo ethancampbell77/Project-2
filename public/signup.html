@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <div class="container">
+  <div class="container-fluid navbar-fixed-top" id="mainNav">
     <div class="row">
       <nav class="navbar navbar-light bg col-lg-12">
         <a class="navbar-brand" href="#">
@@ -20,49 +20,65 @@
       </nav>
     </div>
 
-    <div class="form-group">
-      <label for="exampleInputFirstName">First Name</label>
-      <input type="text" class="form-control" id="firstName-input" placeholder="First Name">
-    </div>
-    <div class="form-group">
-      <label for="exampleInputLasttName">Last Name</label>
-      <input type="text" class="form-control" id="lastName-input" placeholder="Last Name">
-    </div>
-    <div class="form-group">
-      <label for="exampleInputGender">Gender</label>
-      <input type="text" class="form-control" id="gender-input" placeholder="Gender">
-    </div>
-    <div class="form-group">
-      <label for="exampleInputDOB">Date of Birth</label>
-      <input type="text" class="form-control" id="dob-input" placeholder="MM/DD/YYYY">
-    </div>
-    <div class="form-group">
-      <label for="exampleInputEmail1">Email address</label>
-      <input type="email" class="form-control" id="email-input" placeholder="Email">
-    </div>
-    <div class="form-group">
-      <label for="exampleInputPassword1">Password</label>
-      <input type="password" class="form-control" id="password-input" placeholder="Password">
-    </div>
-    <div style="display: none" id="alert" class="alert alert-danger" role="alert">
-      <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-      <span class="sr-only">Error:</span> <span class="msg"></span>
-    </div>
-    <!-- <div class="form-group">
+    <form class="signup">
+      <div class="form-group col-5">
+        <label for="exampleInputFirstName">First Name</label>
+        <input type="text" class="form-control" id="firstName-input" placeholder="First Name">
+      </div>
+
+      <div class="form-group col-5">
+        <label for="exampleInputLasttName">Last Name</label>
+        <input type="text" class="form-control" id="lastName-input" placeholder="Last Name">
+      </div>
+
+      <!-- <div class="form-group col-5">
+        <label for="exampleInputGender">Gender</label>
+        <input type="text" class="form-control" id="gender-input" placeholder="Gender">
+      </div> -->
+      <div class="form-group col-5">
+        <label for="exampleInputGender">Gender: <br></label>
+        <label class="radio-inline">
+          <input type="radio" id="gender-input" value="Female"> Female <br>
+        </label>
+
+        <label class="radio-inline">
+          <input type="radio" id="gender-input" value="Male"> Male
+        </label>
+      </div>
+
+      <div class="form-group col-5">
+        <label for="exampleInputDOB">Date of Birth</label>
+        <input type="text" class="form-control" id="dob-input" placeholder="MM/DD/YYYY">
+      </div>
+
+      <div class="form-group col-5">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="email-input" placeholder="Email">
+      </div>
+
+      <div class="form-group col-5">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" id="password-input" placeholder="Password">
+      </div>
+
+      <div style="display: none" id="alert" class="alert alert-danger" role="alert">
+        <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+        <span class="sr-only">Error:</span> <span class="msg"></span>
+      </div>
+
+      <!-- <div class="form-group">
       <label for="exampleInputInterests">Interests</label>
       <input type="text" class="form-control" id="interests-input" placeholder="Interests">
     </div> -->
-    <br>
-    <button type="submit" class="btn btn-primary btn-style">Sign Up</button>
-
+      <button type="submit" class="btn btn-primary">Sign Up</button>
     </form>
-  </div>
-  </div>
   </div>
 
   <footer class="footer">
     <div class="container">
+
       <span class="text-muted">&copy; smalltalk 2019</span>
+
     </div>
   </footer>
 
