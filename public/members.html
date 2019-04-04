@@ -10,32 +10,133 @@
 </head>
 
 <body>
-<<<<<<< HEAD
-  <nav class="navbar navbar-light navbar-fixed-top nav-members">
-    <a class="navbar-brand" href="/logout">Logout</a>
-    <h5>Welcome <span class="member-name"></span></h5>
-  </nav>
+  <div class="container-fluid navbar-fixed-top" id="mainNav">
+    <div class="row">
+      <nav class="navbar navbar-light bg col-lg-12 navbar-fixed-top">
+        <a class="navbar-brand" href="#">
+          <img src="Images/smallTalkFriendship.png" width="361" height="140.6" class="d-inline-block align-top"
+            alt="small talk: Friendships start with small talk">
+          <nav class="nav">
+            <a class="nav-link active text-dark" href="#">About Us</a>
+            <a class="nav-link active text-dark" href="/logout">Log out</a>
+          </nav>
+        </a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- <div class="container-fluid"> -->
+  <div class="row">
+    <div id="carouselExampleControls" class="carousel slide col-lg-12" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="Images/crazyFace2.png" class="d-block w-100" alt="smalltalk crazy face">
+        </div>
+        <div class="carousel-item">
+          <img src="Images/glassesGroup1.png" class="d-block w-100" alt="smalltalk glasses group">
+        </div>
+        <div class="carousel-item">
+          <img src="Images/leatherBeard2.png" class="d-block w-100"
+            alt="smalltalk leather lady and bearded skateboarder">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+  <!-- </div> -->
+  <div class="infoBox">
+    <div class="container-fluid">
+      <div class="row" id="topLogin">
+        <p class="col-lg-4 offset-lg-4 tagLine1">Start some smalltalk today</p>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="container-fluid ">
+      <div class="row">
+        <form class="col-lg-4 offset-lg-4">
+          <div class="form-group">
+            <label for="formGroupExampleInput">Let's talk!</label>
+            <input type="text" class="form-control" id="searchBox" placeholder="Who are you talking to?">
+            <br>
+            <button type="button" class="btn btn-warning" id="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+      <div class="row">
+        <div class="card bg-warning col-lg-8 offset-lg-2" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Success!</h5>
+            <p class="card-text">Here's your smallTalk:</p>
+            <div id="quesDiv"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div class="container-fluid aboutUsDiv bg-warning">
+    <div class="row">
+      <div class="col-lg-6 offset-lg-2 Text">
+        <h1 class="aboutHeader">About us, why all the smalltalk...?</h1>
+        <p class="aboutText">The idea behind smalltalk is to help arm yourself with a simple tool to help combat awkward
+          or stressful conversations with new people.
+          <br>
+          <br>Anxiety can take many forms and stem from a variety of triggers. Social Anxiety is a very common form of
+          anxiety affecting millions of people around the globe to various degrees; from mild, even unknowing avoidance
+          of social situations to crippling fear
+          <br>
+          <br>Have you ever stayed home from a party or gathering because of a sense of panic or dread surrounding
+          walking in and the types of interactions you might have?
+          <br>
+        </p>
+      </div>
+      <div class="col-lg-2">
+        <img src="Images/HowToGuy2.png" width="400" height="400" class="d-inline-block align-top"
+          alt="smalltalk iconman">
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid howToDiv">
+    <div class="row">
+      <div class="col-lg-2">
+        <img src="Images/HowToGuy.png" width="400" height="400" class="d-inline-block align-top"
+          alt="smalltalk iconman">
+      </div>
+      <div class="col-lg-6 offset-lg-2 howToText">
+        <h1 class="howToHeader">How to use smalltalk</h1>
+        <ul>
+          <li>Anytime you're feeling anxious or nervous about social interactions just pull out you're phone, tablet or
+            laptop and head to smalltalk </li>
+          <br>
+          <li>All you need to do is create a profile and select the persona you believe to best describe the person or
+            people you're likely to interact with and smalltalk will suggest a handful of topics you can use to break
+            the ice, or as we say MAKE smalltalk.</li>
+          <br>
+          <li>You also have the option to add your own search terms if you know a little about who youll meet, or need
+            some new smalltalk ideas on the fly.</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="col-lg-12 mainFooter">
+    <p>&#9400 smalltalk 2019</p>
+  </div>
+
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/members.js"></script>
-=======
-  <!-- <nav class="navbar navbar-light navbar-fixed-top nav-members">
-    <a class="navbar-brand" href="/logout">Logout</a>
-    <h5>Welcome <span class="member-name"></span></h5> 
-  </nav> -->
-
-  <nav class="navbar navbar-light bg col-lg-12">
-    <a class="navbar-brand" href="#">
-      <img src="Images/smallTalkFriendship.png" width="360" height="150" class="d-inline-block align-top"
-        alt="small talk: Friendships start with small talk">
-      <nav class="nav">
-        <a class="nav-link active text-dark" href="#">About smalltalk</a>
-        <!-- <a class="nav-link text-dark" href="#">Sign Up</a> -->
-      </nav>
-
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-      <script type="text/javascript" src="js/members.js"></script>
->>>>>>> 164666e82c23aac0dfe414e8f77f0497b0dd3b02
 
 </body>
 
