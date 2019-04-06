@@ -6,7 +6,7 @@ Description: An application for starting conversations with strangers (AKA makin
 
 How To Use: 
 
-This app requires the user to sign up by creating a profile. After creating an account the user can choose their own descriptive keywords for the person they wish to talk to - upon hitting submit the user will be provided 5 topics in the form of questions as well as the author/source of the information. 
+This app requires the user to sign up by creating a profile. After creating an account the user can choose their own descriptive keywords for the person they wish to talk to - upon hitting submit the user will be provided 5 topics in the form of questions as well as the author, source or title of the information - providing additional background/context for smalltalk. 
 
 We have plenty of ideas as to how we can scale this app in possible future versions.
 
