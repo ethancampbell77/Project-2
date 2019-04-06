@@ -2,9 +2,9 @@
   box-sizing: border-box;
 }
 
-body { 
-  padding-top: 170px; 
-  
+body {
+  padding-top: 170px;
+
 }
 
 
@@ -24,7 +24,7 @@ div#topLogin {
   padding-top: 25px;
   padding-bottom: 10px;
   background: black;
-  color:white;
+  color: white;
 }
 
 p.tagLine1 {
@@ -55,4 +55,5 @@ p.mainFooter {
   margin-left: 3%; */
 }
 
-
+/*members only css*/
+div.infoBox {}
