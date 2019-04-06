@@ -1,58 +1,35 @@
 $(document).ready(function () {
-  // This file just does a GET request to figure out which user is logged in
-  // and updates the HTML on the page
-  $.get("/api/user_data").then(function (data) {
-    console.log(data);
-    $(".member-name").text(data.firstname);
-  });
-
-  function postsearch() {
-    var keyword = $("searchbox").val().trim();
-    event.preventDefault();
-    var newSearch = {
-      Search: keyword
-    };
-
-    // Question: What does this code do??
-    $.post("/api/smalltalk/:keyword", newSearch)
-      .then(function (data) {
-        console.log("Keyword:", data);
-      });
-  }
 
   function newsAPI() {
-    var keyword = $("#searchbox").val().trim()
+    var keyword = $("#searchBox").val().trim();
+    console.log(keyword);
 
-    var queryURL = "https://newsapi.org/v2/everything?q=" + keyword + "&language=en&sortby=relevancy,popularity&apiKey=9faba65dc1fc4e59b71ebc898ca17b59";
-
+    // After the data from the AJAX request comes back
     $.ajax({
-        url: queryURL,
-        method: "GET"
-      })
+      url: "/api/getArticles",
+      method: "POST",
+      body: {
+        query: keyword
+      }
+    }).done(function (response) {
+      console.log(response);
+      // console.log(response.articles[0].title);
+      // function that executes to display headlines on the page
+      if (response.articles.length) {
+        response.articles.forEach((articles, i) => {
 
-      // After the data from the AJAX request comes back
-      .then(function (response) {
-
-        var results = response.data
-
-        for (var i = 0; i <= 5; i++) {
-          var title = results[i].title;
-          var description = results[i].description;
-
-
-          ?
-          ?
-          .append(title); ?
-          ?
-          .append(description);
-        }
-      });
+          if (i < 5) {
+            $("#quesDiv").append(`<p class="titleStyle">${articles.title}</p><p><b>Have you heard that:</b> ${articles.description} ?`);
+          } else {
+            return;
+          }
+        });
+      }
+    });
   }
 
-
-
-  $("#subButton").on("click", function () {
-    postsearch();
+  $("#submit").on("click", function (event) {
+    // postsearch();
     newsAPI();
   });
 });
