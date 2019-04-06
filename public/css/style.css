@@ -59,7 +59,7 @@ div.howToDiv {
   padding-top: 40px;
   padding-bottom: 30px;
   text-align: center;
-  color:black;
+  color: black;
 }
 
 h1.howToHeader {
@@ -79,16 +79,13 @@ div.mainFooter {
   color: white;
   padding: 3%;
 }
+
 /* Members Page Headlines */
 
 h5.titleText {
   font-size: 40px;
 }
 
-<<<<<<< HEAD
-/*members only css*/
-div.infoBox {}
-=======
 p.subText {
   font-size: 30px;
 }
@@ -96,7 +93,3 @@ p.subText {
 p.titleStyle {
   text-decoration: underline;
 }
-
-
-
->>>>>>> 1c5671bfacc4fbf70c988638eff48a0d1620b679
